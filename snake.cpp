@@ -127,7 +127,7 @@ int main(){
         }
         // detect collision to walls
 
-        // detect collision to walls
+        // detect collision to food
         if(snake[0].x == food.x && snake[0].y == food.y){
         	srand(time(NULL));
             food.x = rand() % 18 + 1;
@@ -137,7 +137,7 @@ int main(){
             snake[size - 1].y = snake[size-2].y;
             score++;
         }
-        // detect collision to walls
+        // detect collision to food
 
         // detect collision to sanke it self
         for(m=size - 2; m > 0; m--){
